@@ -23,44 +23,34 @@ require_once "config.php";
 
         <div class="container">
             <form method="POST" class="appointment-form" id="appointment-form">
-                <h2>Enrollment Form</h2>
+                <h2>Enrolment Form</h2>
                 <div class="form-group-1">
                     
                     <input type="text" name="name" id="name" placeholder="Your Full Name" required />
+                    <input type="text" name="fathername" id="fathername" placeholder="Father Name" required />
                     <input type="email" name="email" id="email" placeholder="Email" required />
                     <input type="number" name="contact" id="phone_number" placeholder="Phone number" required />
                     <input type="number" name="fathercontact" id="father_number" placeholder="father's number" required />
                     <input type="text" name="address" id="address" placeholder="Address" required />
-                   
-                    <div class="select-list">
-                        <select name="course_type" id="course_type">
-                            <option slected value="">Course Type</option>
-                            <option value="Economics">Economcis</option>
-                            <option value="language"></option>
+                    <input type="date" name="dob" id="dob" placeholder="Date of birth" required/>
+                    <input type="text" name="class" id="class" placeholder="Class" required />
+                    <input type="text" name="institute" id="institute" placeholder="School/College/University Name" required />
+                    <input type="text" name="country" id="country" placeholder="Country" required />
+                    <input type="text" name="city" id="city" placeholder="City" required />
+                    <select name="paymentoption" id="paymentoption">
+                            <option slected value="">Course Payment Option</option>
+                            <option value="easypaisa">EASY PAISA</option>
+                            <option value="jazzcash">JAZZ CASH</option>
+                            <option value="banktransfer">BANK TRANSFER</option>
                         </select>
-                    </div>
                 </div>
-                <div class="form-group-2">
-                    <h3>How would you like to bo located ?</h3>
-                    <div class="select-list">
-                        <select name="confirm_type" id="confirm_type">
-                            <option seleected value="">By phone</option>
-                            <option value="by_email">By email</option>
-                        </select>
-                    </div>
-                    <div class="select-list">
-                        <select name="hour_appointment" id="hour_appointment">
-                            <option seleected value="">Hours : 8am 10pm</option>
-                            <option value="9h-11h">Hours : 9am 11pm</option>
-                        </select>
-                    </div>
-                </div>
+              
                 <div class="form-check">
                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
                     <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the  <a href="#" class="term-service">Terms and Conditions</a></label>
                 </div>
                 <div class="form-submit">
-                    <input type="submit" name="submit" id="submit" class="submit" value="Request an appointment" />
+                    <input type="submit" name="submit" id="submit" class="submit" value="Submit" />
                 </div>
             </form>
         </div>
@@ -70,5 +60,5 @@ require_once "config.php";
     <!-- JS -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
 </html>
