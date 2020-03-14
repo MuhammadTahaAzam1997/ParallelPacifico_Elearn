@@ -1,3 +1,8 @@
+<?php
+require_once "config.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,8 +28,8 @@
                     
                     <input type="text" name="name" id="name" placeholder="Your Full Name" required />
                     <input type="email" name="email" id="email" placeholder="Email" required />
-                    <input type="number" name="phone_number" id="phone_number" placeholder="Phone number" required />
-                    <input type="number" name="father_number" id="father_number" placeholder="father's number" required />
+                    <input type="number" name="contact" id="phone_number" placeholder="Phone number" required />
+                    <input type="number" name="fathercontact" id="father_number" placeholder="father's number" required />
                     <input type="text" name="address" id="address" placeholder="Address" required />
                    
                     <div class="select-list">
