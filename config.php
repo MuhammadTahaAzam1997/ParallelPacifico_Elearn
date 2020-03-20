@@ -11,13 +11,4 @@ define('DB_NAME', 'pp');
 // Try connecting to the Database
 $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
-if($connection==true)
-{
-echo"true";
-}
-else{
-
-echo "false";
-}
-
 ?>

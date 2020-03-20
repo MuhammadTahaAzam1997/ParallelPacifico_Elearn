@@ -1,5 +1,30 @@
 <?php
 require_once "config.php";
+
+if(isset($_POST['submit'])){
+
+    $name=$_POST['name'];
+    $fathername=$_POST['fathername'];
+    $email=$_POST['email'];
+    $contact=$_POST['contact'];
+    $fathercontact=$_POST['fathercontact'];
+    $address=$_POST['address'];
+    $dob=$_POST['dob'];
+    $class=$_POST['class'];
+    $institute=$_POST['institute'];
+    $country=$_POST['country'];
+    $city=$_POST['city'];
+    $paymentstatus=$_POST['paymentstatus'];
+    
+    mysqli_query($connection,"insert into studentinfo(name,fathername,contact,email,fathercontact,address,dob,class,institute,country,city,paymentstatus) values ('$name','$fathername','$contact','$email','$fathercontact','$address','$dob','$class','$institute','$country','$city','$paymentstatus')");
+    
+    $msg="submitted";
+    echo "<script type='text/javascript'>alert('$msg');</script>";
+    // header('location: index.html');        
+}
+
+
+
 ?>
 
 
@@ -9,21 +34,25 @@ require_once "config.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Register Form</title>
+    
+    <link rel="stylesheet" href="style.css">
+
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
-
-    <!-- Main css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
 
     <div class="main">
 
         <div class="container">
             <form method="POST" class="appointment-form" id="appointment-form">
-                <h2>Enrolment Form</h2>
+           <center> <img src="assests/logo.jpg" alt="" class="logo rounded" width="55px" height="auto"> </center>
+                    
+               <center> <h2>Enrolment Form</h2> </center>
                 <div class="form-group-1">
                     
                     <input type="text" name="name" id="name" placeholder="Your Full Name" required />
@@ -37,7 +66,7 @@ require_once "config.php";
                     <input type="text" name="institute" id="institute" placeholder="School/College/University Name" required />
                     <input type="text" name="country" id="country" placeholder="Country" required />
                     <input type="text" name="city" id="city" placeholder="City" required />
-                    <select name="paymentoption" id="paymentoption">
+                    <select name="paymentstatus" id="paymentstatus">
                             <option slected value="">Course Payment Option</option>
                             <option value="easypaisa">EASY PAISA</option>
                             <option value="jazzcash">JAZZ CASH</option>
@@ -46,7 +75,7 @@ require_once "config.php";
                 </div>
               
                 <div class="form-check">
-                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required/>
                     <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the  <a href="#" class="term-service">Terms and Conditions</a></label>
                 </div>
                 <div class="form-submit">
