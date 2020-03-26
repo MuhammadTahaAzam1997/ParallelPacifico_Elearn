@@ -52,7 +52,7 @@ if(isset($_POST['submit'])){
             <form method="POST" class="appointment-form" id="appointment-form">
            <center> <img src="assests/logo.jpg" alt="" class="logo rounded" width="55px" height="auto"> </center>
                     
-               <center> <h2>Enrolment Form</h2> </center>
+               <center>  <h2>Enrolment Form</h2>  </center>
                 <div class="form-group-1">
                     
                     <input type="text" name="name" id="name" placeholder="Your Full Name" required />
