@@ -37,6 +37,7 @@ if(isset($_POST['submit'])){
     <title>Register Form</title>
     
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assests/logo.jpg">
 
 
     <!-- Font Icon -->
@@ -76,7 +77,7 @@ if(isset($_POST['submit'])){
               
                 <div class="form-check">
                     <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" required/>
-                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the  <a href="#" class="term-service">Terms and Conditions</a></label>
+                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the  <a href="https://www.therqa.com/learning/terms-and-conditions/elearning-terms-and-conditions/" class="term-service">Terms and Conditions</a></label>
                 </div>
                 <div class="form-submit">
                     <input type="submit" name="submit" id="submit" class="submit" value="Submit" />
