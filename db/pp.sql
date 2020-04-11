@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 04, 2020 at 06:38 PM
+-- Generation Time: Apr 11, 2020 at 01:07 PM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `studentinfo`
+-- Table structure for table `commerceolevel`
 --
 
-CREATE TABLE `studentinfo` (
+CREATE TABLE `commerceolevel` (
   `id` int(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `fathername` varchar(255) NOT NULL,
@@ -41,31 +41,75 @@ CREATE TABLE `studentinfo` (
   `institute` varchar(255) NOT NULL,
   `country` varchar(255) NOT NULL,
   `city` varchar(255) NOT NULL,
-  `paymentstatus` varchar(255) NOT NULL
+  `paymentstatus` varchar(255) NOT NULL,
+  `Time` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `studentinfo`
+-- Dumping data for table `commerceolevel`
 --
 
-INSERT INTO `studentinfo` (`id`, `name`, `fathername`, `contact`, `email`, `fathercontact`, `address`, `dob`, `class`, `institute`, `country`, `city`, `paymentstatus`) VALUES
-(1, 'Muhammad Taha Azam', '---', 2147483647, 'MuhammadTahaAzam@gmail.com', 57, 'abc street', '2020-01-01', '10', 'SSUET', 'Pakistan', 'Karachi', ''),
-(2, 'abc', 'abc', 2147483647, 'tahaazam1997@gmail.com', 2, '2', '0002-02-02', '2', '2', '2', '2', ''),
-(3, 'Taha', 'azam', 22, 'asbahd@gmail.com', 2, '2', '1111-02-22', '2', 'sa1d', 'sd51', '6a1ds', 'easypaisa'),
-(4, 'Taha Azam', 's', 1, 'javalanguage.core@gmail.com', 5, '5', '0005-05-04', '5', '5', '5', '5', 'easypaisa'),
-(5, '1', '1', 2, 'support@vidizmo.com', 1, '1', '0001-11-11', '1', '1', '1', '1', 'easypaisa'),
-(6, 'dnc', 'mnb', 5, 'javalanguage.core@gmail.com', 5, '5', '0005-05-05', '55', '5', '5', '5', 'easypaisa'),
-(7, 'Taha Azam', 'Muhammad Nayyer Azam', -1, 'javalanguage.core@gmail.com', -1, '2', '0001-01-01', 'sadasd', '2', '5', 'karachi', 'easypaisa'),
-(8, 'aa', 'd', 22, 'asbahd@gmail.com', 22, '22', '2020-04-22', '22', '22', '22', '2231313', 'jazzcash');
+INSERT INTO `commerceolevel` (`id`, `name`, `fathername`, `contact`, `email`, `fathercontact`, `address`, `dob`, `class`, `institute`, `country`, `city`, `paymentstatus`, `Time`) VALUES
+(1, 'Muhammad Taha Azam', '---', 2147483647, 'MuhammadTahaAzam@gmail.com', 57, 'abc street', '2020-01-01', '10', 'SSUET', 'Pakistan', 'Karachi', '', '2020-04-05'),
+(2, 'abc', 'abc', 2147483647, 'tahaazam1997@gmail.com', 2, '2', '0002-02-02', '2', '2', '2', '2', '', '2020-04-05'),
+(3, 'Taha', 'azam', 22, 'asbahd@gmail.com', 2, '2', '1111-02-22', '2', 'sa1d', 'sd51', '6a1ds', 'easypaisa', '2020-04-05'),
+(4, 'Taha Azam', 's', 1, 'javalanguage.core@gmail.com', 5, '5', '0005-05-04', '5', '5', '5', '5', 'easypaisa', '2020-04-05'),
+(5, '1', '1', 2, 'support@vidizmo.com', 1, '1', '0001-11-11', '1', '1', '1', '1', 'easypaisa', '2020-04-05'),
+(6, 'dnc', 'mnb', 5, 'javalanguage.core@gmail.com', 5, '5', '0005-05-05', '55', '5', '5', '5', 'easypaisa', '2020-04-05'),
+(7, 'Taha Azam', 'Muhammad Nayyer Azam', -1, 'javalanguage.core@gmail.com', -1, '2', '0001-01-01', 'sadasd', '2', '5', 'karachi', 'easypaisa', '2020-04-05'),
+(8, 'aa', 'd', 22, 'asbahd@gmail.com', 22, '22', '2020-04-22', '22', '22', '22', '2231313', 'jazzcash', '2020-04-05'),
+(9, 'Taha Azam', 'Muhammad Nayyer Azam', 555, 'javalanguage.core@gmail.com', 88888, 'SDAMSBDJHASBDHASBDJHBASHDBJASDJK1314352', '2020-04-22', 'asjdbbjkas', 'SSUET', 'Pakistan', 'Karachi', 'jazzcash', '2020-04-05'),
+(10, 'a', 'aa', 1, 'asbahd@gmail.com', 1, '1', '2020-04-09', '1', '1', '1', '1', 'easypaisa', '2020-04-10'),
+(11, 'a', 'a', 1, 'asbahd@gmail.com', 1, 'ASDVSHADVAJSDJABSDJJBASDHBHASBD', '2020-04-15', '`s`', 'q', 'q', 'q', 'easypaisa', '2020-04-10'),
+(12, 'a', 'a', 1, 'asbahd@gmail.com', 1, 'ASDVSHADVAJSDJABSDJJBASDHBHASBD', '2020-04-15', '`s`', 'q', 'q', 'q', 'easypaisa', '2020-04-10'),
+(13, 'Taha Azam', 'Muhammad Nayyer Azam', 62262, 'javalanguage.core@gmail.com', 262262, '6266', '2020-04-24', 'asjdbbjkas', 'SSUET', '2', '15', 'easypaisa', '2020-04-11'),
+(14, 'Taha Azam', 'Muhammad Nayyer Azam', 62262, 'javalanguage.core@gmail.com', 262262, '6266', '2020-04-24', 'asjdbbjkas', 'SSUET', '2', '15', 'easypaisa', '2020-04-11'),
+(15, 'Taha Azam', 'Muhammad Nayyer Azam', 62262, 'javalanguage.core@gmail.com', 262262, '6266', '2020-04-24', 'asjdbbjkas', 'SSUET', '2', '15', 'easypaisa', '2020-04-11'),
+(16, 'Taha', 'azam', 2321, '444@gmail.com', 45, '65', '0006-06-07', 'mhbhjb`8', '98908', '08098', '908', 'banktransfer', '2020-04-11'),
+(17, 'Taha', 'azam', 2321, '444@gmail.com', 45, '65', '0006-06-07', 'mhbhjb`8', '98908', '08098', '908', 'banktransfer', '2020-04-11'),
+(18, 'Taha Azam', 'Muhammad Nayyer Azam', 231223, '444@gmail.com', 21312, '2131212', '2020-04-16', '12312', '213123', '12312', '12312', 'jazzcash', '2020-04-11'),
+(19, 'sdasd', 'sadasd', 23123, '444@gmail.com', 21312, '23123', '2020-04-23', '21312', '213123', '23123', '12312', 'easypaisa', '2020-04-11');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `traffic`
+--
+
+CREATE TABLE `traffic` (
+  `id` int(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `fname` varchar(255) NOT NULL,
+  `num` int(255) NOT NULL,
+  `fnum` int(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `ins` varchar(255) NOT NULL,
+  `date` date NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `traffic`
+--
+
+INSERT INTO `traffic` (`id`, `name`, `fname`, `num`, `fnum`, `email`, `ins`, `date`) VALUES
+(1, 'Taha Azam', 'Muhammad Taha Azam', 0, 0, 'javalanguage.core@gmail.com', 'ssuet', '2020-04-05'),
+(2, 'Taha Azam', 'Muhammad Taha Azam', 0, 0, 'javalanguage.core@gmail.com', 'ssuet', '2020-04-05'),
+(3, 'Taha Azam', 'Nayyer', 59262, 5569, 'MuhammadTahaAzam@gmail.com', 'ups', '2020-04-05');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `studentinfo`
+-- Indexes for table `commerceolevel`
 --
-ALTER TABLE `studentinfo`
+ALTER TABLE `commerceolevel`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `traffic`
+--
+ALTER TABLE `traffic`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -73,10 +117,16 @@ ALTER TABLE `studentinfo`
 --
 
 --
--- AUTO_INCREMENT for table `studentinfo`
+-- AUTO_INCREMENT for table `commerceolevel`
 --
-ALTER TABLE `studentinfo`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+ALTER TABLE `commerceolevel`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT for table `traffic`
+--
+ALTER TABLE `traffic`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
