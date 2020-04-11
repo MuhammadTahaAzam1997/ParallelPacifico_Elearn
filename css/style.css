@@ -137,6 +137,35 @@ body {
   font-family: 'Roboto Slab';
   margin: 0px; }
 
+  .color-btn{
+    border-radius: 0;
+    top: 0;
+    bottom: 0;
+    transition: all 300ms ease-in;
+    margin-left: auto;
+    color: #031D44 !important;
+    border:  2px solid #fed549 !important;
+    background: #fed549;
+}
+
+.color-btn:hover{
+    background: transparent !important;
+    border:  2px solid rgba(3, 29, 68, 0.685) !important;
+    color: rgba(3, 29, 68, 0.685) !important;
+}
+
+.transparent-btn1{
+    color: #fed549;
+    border: 2px solid #fed549 !important;
+    background: transparent;
+    border-radius: 0%;
+    transition: all 300ms ease-in;    
+}
+.transparent-btn1:hover{
+    background: #fed549 !important;
+    color: #031D44;
+    transition: all 300ms ;
+}
 .main {
   padding: 60px 0;
   position: relative; }

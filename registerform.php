@@ -51,7 +51,7 @@ if(isset($_POST["submit"])){
                 <center> <img src="assests/logo.jpg" alt="" class="logo rounded" width="55px" height="auto"> </center>
     
                 <center>
-                        <h2>Enrolment Form</h2> </center>
+                        <h2>Sign Up</h2> </center>
                     <center>
                         <input type="text" name="name" id="" placeholder="Fullname">
                         <input type="text" name="fname" id="" placeholder="Father's name">
@@ -62,7 +62,7 @@ if(isset($_POST["submit"])){
                         
                 </div>
                 <div class="form-submit">
-                    <input type="submit" name="submit" value="sumbit"> </center>
+                    <input type="submit" name="submit"   class="btn color-btn" value="sumbit"> </center>
                     
                 </center>
 

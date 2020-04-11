@@ -6,13 +6,13 @@ require_once "config.php";
 // echo $_REQUEST['password'];
 
 if(isset($_POST['submit'])){
-if($_REQUEST['password'] == "taha"){
+if($_REQUEST['password'] == "Taha"){
     header("location: index.html");
     exit();
 }
-elseif($_REQUEST['password'] == "Taha"){
+elseif($_REQUEST['password'] == "taha"){
 
-    header("location: registerform.php");
+    header("location: Lectures.html");
     exit();
 }
 else{
@@ -56,7 +56,7 @@ else{
                         <br>
                 </div>
                 <div class="form-submit">
-                    <input type="submit" name="submit" value="sumbit"> </center>
+                    <input type="submit" name="submit"  class="btn color-btn" value="sumbit"> </center>
                     <!-- <a href="mailto:abc@example.com?subject = Feedback&body = Message"> Forgot Password?</a>  --></div>
                 <center><a href="mailto:mobinurrehman@gmail.com?bcc=&subject=Need%20the%20new%20password!&body=Hi%20Concern%20Commettee,%0d%0dI%20forgot%20my%20exsisting%20password%20of%20my%20course.%20Please%20send%20me%20again%0d%0dName:%0d" rel="EMAIL">Forgot Password!</a>
                     <!-- %20 for white space and %0d for one line gap -->

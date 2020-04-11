@@ -1,0 +1,266 @@
+<?php
+function passwordCheck(){
+    var password = prompt("Please enter the password.");
+    if (password==="ilikepie"){
+        window.location="realpage.html";
+    } else{
+        while(password !=="ilikepie"){
+            password = prompt("Please enter the password.");
+        }
+        window.location="realpage.html";
+    }
+}
+window.onload=passwordCheck;?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallel Institute</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css-master/animate.min.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <section id="topbar">
+            <div class="container-fluid">
+                <div class="topbar-item row">
+                    <h5> <i class="fa fa-phone mr-2" aria-hidden="true"></i>03432125478</h5>
+                    <h6> <i class="fa fa-envelope mr-2" aria-hidden="true"></i>mobinurrehman@gmail.com</h6>
+                    <a href="registerform.php" class="btn menu-right-btn" type="submit">Sing Up</a>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="#" class="navbar-brand ml-5">
+                <img src="assests/logo.jpg" alt="" class="logo rounded" width="55px" height="auto">
+                <!-- Parallel <span style="color: darkblue;">Pacifico</span> -->
+            </a>
+            <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse"></div>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto mr-4">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link nav-link-fade-up">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Courses.html" class="nav-link nav-link-fade-up">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="loginpage.php" class="nav-link nav-link-fade-up">Lectures</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-fluid p-0">
+            <div class="child-site-content">
+                <div class="d-flex justify-content-center text-center">
+                    <div class="d-flex flex-column cover-image">
+                        <h1 class="child-site-title wow zoomIn">Lectures Details</h1>
+                        <p class="child-site-desc wow slideInUp"> M. Uzair Shoaib (ACA, FCCA, APA, PIPFA, M.A
+                            [Economics])</p>
+                        <!-- <div class="flex-row text-center">
+                            <button class="btn child-site-btn1 px-4 py-2 wow fadeInLeft ">Enroll Now</button>
+                            <a href="#section-1" class=""><button class="btn child-site-btn2 px-4 py-2 wow fadeInRight">More Info</button></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lectures Section -->
+
+
+    <div id="lectures-section">
+        <div class="container text-center">
+
+            <h1 class="wow slideInDown">Audit, Assurance and Related Services</h1>
+            <h5 class="wow slideInUp">Tmply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                theindustry’s standard.</h5>
+
+
+            <div class="row py-5">
+                <div class="col-lg-3 col-md-offset-10 col-sm-12">
+                    <div class="card">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.dropbox.com/s/48mkt9cw98ernx8/bg1.mp4?raw=1" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Chapter 1</h5>
+                            <!-- <p class="card-text">Online courses for the student of Chartered Accountancy</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-offset-10 col-sm-12">
+                    <div class="card">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.dropbox.com/s/48mkt9cw98ernx8/bg1.mp4?raw=1" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Chapter 2</h5>
+                            <!-- <p class="card-text">Online courses for the student of Chartered Accountancy</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-offset-10 col-sm-12">
+                    <div class="card">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.dropbox.com/s/48mkt9cw98ernx8/bg1.mp4?raw=1" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Chapter 3</h5>
+                            <!-- <p class="card-text">Online courses for the student of Chartered Accountancy</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-offset-10 col-sm-12">
+                    <div class="card">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.dropbox.com/s/48mkt9cw98ernx8/bg1.mp4?raw=1" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Chapter 4</h5>
+                            <!-- <p class="card-text">Online courses for the student of Chartered Accountancy</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer Section -->
+
+    <div id="footer">
+        <div class="container footer-copyright py-4">
+            <div class="row">
+                <div class="pay col-lg-3 col-md-12 col-sm-10 text-center">
+                    <img src="assests/bank.jpg" alt="" class="img-fluid ml-2" width="32px">
+                    <img src="assests/cash.jfif" alt="" class="img-fluid ml-2" width="32px">
+                    <img src="assests/easypaisa.jpg" alt="" class="img-fluid ml-2" width="32px">
+                </div>
+                <div class="col-lg-6 text-center py-2">
+                    Copyright @ PARALLEL PACIFICO EDUCATION. All Right Reserved.
+                    <div>
+                        Powered by <a href="ewagencies.com" class="footer-link">EasyWay Agencies</a>
+                    </div>
+                </div>
+                <div class="social-link col-lg-3 text-center">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <!-- <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a> -->
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.site-dece, .site-title, .cover-image, .section-1, .card')
+    </script> -->
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/popup.min.js"></script>
+    <script>
+        new WOW().init();
+
+
+        // function passwordCheck() {
+        //     var password = prompt("Please enter the password.");
+        //     if (password === "taha") {
+        //         window.location = "lectures.html";
+
+        //     } 
+        //     else {
+        //         while (password !== "taha") {
+        //             password = prompt("Please enter the password.");
+        //         }
+        //         window.location = "lectures.html";
+        //     }
+        // }
+        // window.onload = passwordCheck;
+
+
+
+
+
+        // function passWord() {
+        //     var testV = 1;
+        //     var pass1 = prompt('Please Enter Your Password', ' ');
+        //     while (testV < 3) {
+        //         if (!pass1)
+        //             history.go(-1);
+        //         if (pass1.toLowerCase() == "taha") {
+        //             alert('You Got it Right!');
+        //             window.open('lectures.html');
+        //             break;
+        //         }
+        //         testV += 1;
+        //         var pass1 =
+        //             prompt('Access Denied - Password Incorrect, Please Try Again.', 'Password');
+        //     }
+        //     if (pass1.toLowerCase() != "password" & testV == 3)
+        //         history.go(-1);
+        //     return " ";
+        // }
+        // window.onload = passWord;
+
+        do{
+    input = prompt("Enter password");
+    if(input== "taha"){
+        
+    }
+    else{
+        while(input != "taha"){
+            input = prompt("Enter password");
+    }
+    }    
+    }while(input == null || input == "" );
+
+    console.log(input);
+
+    </script>
+
+</body>
+
+</html>
